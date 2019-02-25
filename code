@@ -16,8 +16,7 @@ def validity(key):
                 f4=1
             if(s[i]=='%' or s[i]=='!' or s[i]==')' or s[i]=='('):
                 f5=1
-            
-        
+                
         if(length<6):
             print("Failure Password must be at least 6 character long.")
         elif(length>12):
