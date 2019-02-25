@@ -1,0 +1,41 @@
+def validity(key):
+    key=key.split(',')
+    for j in range(len(key)):
+        s=key[j]
+        print(s,end=" ")
+        length=len(s)
+        f1=f2=f3=f4=f5=0
+        for i in range(length):
+            if(s[i]>='a' and s[i]<='z'):
+                f1=1
+            if(s[i]>='A' and s[i]<='Z'):
+                f2=1
+            if(s[i]>='0' and s[i]<='9'):
+                f3=1
+            if(s[i]=='*' or s[i]=='$' or s[i]=='_' or s[i]=='#' or s[i]=='=' or s[i]=='@' ):
+                f4=1
+            if(s[i]=='%' or s[i]=='!' or s[i]==')' or s[i]=='('):
+                f5=1
+            
+        
+        if(length<6):
+            print("Failure Password must be at least 6 character long.")
+        elif(length>12):
+            print("Failure Password must be at max 12 character long.")
+        elif(f1==0):
+            print("Failure Password must contain at least one character from a-z.")
+        elif(f2==0):
+            print("Failure Password must contain at least one character from A-Z.")
+        elif(f3==0):
+            print("Failure Password must contain at least one character from 0-9.")
+        elif(f4==0):
+            print("Failure Password must contain at least one character from *$_#=@.")
+        elif(f5==1):
+            print("Failure Password cannot contain %!)(.")
+        else:
+            print("Success")
+
+
+password=input()
+validity(password)
+    
