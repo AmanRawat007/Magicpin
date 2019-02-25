@@ -13,14 +13,13 @@ them according to the above criteria. Print out each password with resulting 'Su
 'Failure'. In case of 'Failure' also print the reason for failure in the same line.
 Example
 
-If the following passwords are given as input to the program:
 12sdA@83,a F1#,2w3E*%dg,2We3345, 1234567
 Then, the output of the program should be:
-12sdA@83 Success
-a F1# Failure Password must be at least 6 characters long.
-2w3E*%dg Failure Password cannot contain %!)(.
-2We3345 Failure Password must contain at least one letter from *$_#=@.
-1234567 Failure Password must contain at least one letter from a-z.
+1. 12sdA@83 Success
+2. a F1# Failure Password must be at least 6 characters long.
+3. 2w3E*%dg Failure Password cannot contain %!)(.
+4. 1234567 Failure Password must contain at least one letter from a-z.
+
 Hint: Error messages for each check:
 1. Password must be at least 6 characters long.
 2. Password must be at max 12 characters long.
