@@ -17,7 +17,9 @@ Example,
 
 If the following passwords are given as input to the program:
 12sdA@83,a F1#,2w3E*%dg,2We3345, 1234567
+
 Then, the output of the program should be:
+
 12sdA@83 Success
 a F1# Failure Password must be at least 6 characters long.
 2w3E*%dg Failure Password cannot contain %!)(.
