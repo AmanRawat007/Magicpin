@@ -15,7 +15,7 @@ Example
 
 12sdA@83,a F1#,2w3E*%dg,2We3345, 1234567
 Then, the output of the program should be:
-1. 12sdA@83 Success
+1. 12sdA@83 Success.
 2. a F1# Failure Password must be at least 6 characters long.
 3. 2w3E*%dg Failure Password cannot contain %!)(.
 4. 1234567 Failure Password must contain at least one letter from a-z.
